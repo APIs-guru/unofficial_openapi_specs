@@ -22,6 +22,22 @@ securityDefinitions:
     tokenUrl: 'https://slack.com/api/oauth.access'
     type: oauth2
 paths:
+  /auth.test:
+    get:
+      description: Checks authentication and tells you who you are.
+      parameters:
+        - description: Authentication token
+          in: query
+          required: true
+          name: token
+          type: string
+      scopes:
+        - identify
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/user'
   /channels.history:
     get:
       description: Fetches history of messages and events from a channel.
@@ -1587,6 +1603,21 @@ definitions:
       ok:
         type: boolean
       topic:
+        type: string
+    type: object
+  user:
+    properties:
+      ok:
+        type: boolean
+      team:
+        type: string
+      team_id:
+        type: string
+      url:
+        type: string
+      user:
+        type: string
+      user_id:
         type: string
     type: object
   usersList:
