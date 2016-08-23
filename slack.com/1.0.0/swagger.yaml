@@ -31,8 +31,9 @@ paths:
           required: true
           name: token
           type: string
-      scopes:
-        - identify
+      security:
+        oauth_2_0:
+          - identify
       responses:
         '200':
           description: OK
