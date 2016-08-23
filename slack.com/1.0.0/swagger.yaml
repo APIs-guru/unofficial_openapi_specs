@@ -32,7 +32,7 @@ paths:
           name: token
           type: string
       security:
-        oauth_2_0:
+        - oauth_2_0:
           - identify
       responses:
         '200':
