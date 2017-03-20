@@ -22,15 +22,12 @@ externalDocs:
 securityDefinitions:
   api_key:
     in: header
-    name: api_key
+    name: key
     type: apiKey
-  trello_auth:
-    authorizationUrl: 'https://trello.com/1/appKey/generate'
-    flow: implicit
-    scopes:
-      'read:boards': read any of the boards in your account
-      'write:boards': modify any of the boards in your account
-    type: oauth2
+  api_token:
+    in: query
+    name: token
+    type: apiKey
 tags:
   - description: 'https://trello.com/docs/api/action/index.html'
     name: action
