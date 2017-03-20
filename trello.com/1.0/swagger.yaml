@@ -28,7 +28,6 @@ securityDefinitions:
     in: query
     name: token
     type: apiKey
-    
 tags:
   - description: 'https://trello.com/docs/api/action/index.html'
     name: action
