@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+var util = require('util');
 var rr = require('recursive-readdir');
 var yaml = require('js-yaml');
 
@@ -70,12 +71,12 @@ function check(file,force,expectFailure) {
 		}
 
 		//if (!src || ((!src.swagger && !src.openapi))) return true;
-		if (!argv.quiet) console.log(normal+file);
 
-        validator.validate(src,function(err,api){
+        if (src) validator.validate(src,function(err,api){
+		    if (!argv.quiet) console.log(normal+file);
 			if (err) {
 				if (argv.quiet) console.log(normal+file);
-				console.log(red+options.context.pop()+'\n'+ex.message);
+				console.log(red+options.context.pop()+'\n'+util.inspect(err));
 				result = false;
 				failures.push(file);
 			}
