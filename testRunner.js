@@ -81,7 +81,7 @@ function check(file,force,expectFailure) {
 			}
 			else {
 				if (!argv.quiet) {
-		  			console.log(green+'  %s %s',src.info.title,src.info.version);
+		  			console.log(green+'%s %s',src.info.title,src.info.version);
 					console.log('  %s',src.swagger ? (src.host ? src.host : 'relative') : (src.servers && src.servers.length ? src.servers[0].url : 'relative'));
 				}
 				result = true;
