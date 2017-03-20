@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "swagger-parser": "^3.4.1",
+    "yargs": "^7.0.2"
+  }
+}
