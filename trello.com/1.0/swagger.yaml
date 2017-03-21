@@ -21,7 +21,7 @@ externalDocs:
   url: 'https://developers.trello.com'
 securityDefinitions:
   api_key:
-    in: header
+    in: query
     name: key
     type: apiKey
   api_token:
@@ -85,9 +85,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteActionsByIdAction()
       tags:
         - action
@@ -153,8 +152,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsByIdAction()
       tags:
         - action
@@ -188,9 +187,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateActionsByIdAction()
       tags:
         - action
@@ -225,8 +223,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsBoardByIdAction()
       tags:
         - action
@@ -260,8 +258,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsBoardByIdActionByField()
       tags:
         - action
@@ -296,8 +294,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsCardByIdAction()
       tags:
         - action
@@ -331,8 +329,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsCardByIdActionByField()
       tags:
         - action
@@ -361,8 +359,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsDisplayByIdAction()
       tags:
         - action
@@ -391,8 +389,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsEntitiesByIdAction()
       tags:
         - action
@@ -427,8 +425,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsListByIdAction()
       tags:
         - action
@@ -462,8 +460,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsListByIdActionByField()
       tags:
         - action
@@ -498,8 +496,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsMemberByIdAction()
       tags:
         - action
@@ -533,8 +531,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsMemberByIdActionByField()
       tags:
         - action
@@ -569,8 +567,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsMemberCreatorByIdAction()
       tags:
         - action
@@ -604,8 +602,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsMemberCreatorByIdActionByField()
       tags:
         - action
@@ -640,8 +638,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsOrganizationByIdAction()
       tags:
         - action
@@ -675,8 +673,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getActionsOrganizationByIdActionByField()
       tags:
         - action
@@ -711,9 +709,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateActionsTextByIdAction()
       tags:
         - action
@@ -802,9 +799,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoards()
       tags:
         - board
@@ -1044,8 +1040,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsByIdBoard()
       tags:
         - board
@@ -1079,9 +1075,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsByIdBoard()
       tags:
         - board
@@ -1187,8 +1182,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsActionsByIdBoard()
       tags:
         - board
@@ -1223,8 +1218,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsBoardStarsByIdBoard()
       tags:
         - board
@@ -1253,9 +1248,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsCalendarKeyGenerateByIdBoard()
       tags:
         - board
@@ -1354,8 +1348,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsCardsByIdBoard()
       tags:
         - board
@@ -1510,8 +1504,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsCardsByIdBoardByIdCard()
       tags:
         - board
@@ -1576,8 +1570,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsChecklistsByIdBoard()
       tags:
         - board
@@ -1611,9 +1605,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsChecklistsByIdBoard()
       tags:
         - board
@@ -1648,9 +1641,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsClosedByIdBoard()
       tags:
         - board
@@ -1689,8 +1681,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsDeltasByIdBoard()
       tags:
         - board
@@ -1725,9 +1717,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsDescByIdBoard()
       tags:
         - board
@@ -1756,9 +1747,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsEmailKeyGenerateByIdBoard()
       tags:
         - board
@@ -1793,9 +1783,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsIdOrganizationByIdBoard()
       tags:
         - board
@@ -1830,9 +1819,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesBlueByIdBoard()
       tags:
         - board
@@ -1867,9 +1855,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesGreenByIdBoard()
       tags:
         - board
@@ -1904,9 +1891,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesOrangeByIdBoard()
       tags:
         - board
@@ -1941,9 +1927,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesPurpleByIdBoard()
       tags:
         - board
@@ -1978,9 +1963,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesRedByIdBoard()
       tags:
         - board
@@ -2015,9 +1999,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsLabelNamesYellowByIdBoard()
       tags:
         - board
@@ -2058,8 +2041,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsLabelsByIdBoard()
       tags:
         - board
@@ -2093,9 +2076,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsLabelsByIdBoard()
       tags:
         - board
@@ -2135,8 +2117,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsLabelsByIdBoardByIdLabel()
       tags:
         - board
@@ -2189,8 +2171,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsListsByIdBoard()
       tags:
         - board
@@ -2224,9 +2206,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsListsByIdBoard()
       tags:
         - board
@@ -2287,9 +2268,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsMarkAsViewedByIdBoard()
       tags:
         - board
@@ -2335,8 +2315,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembersByIdBoard()
       tags:
         - board
@@ -2370,9 +2350,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMembersByIdBoard()
       tags:
         - board
@@ -2438,9 +2417,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteBoardsMembersByIdBoardByIdMember()
       tags:
         - board
@@ -2479,9 +2457,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMembersByIdBoardByIdMember()
       tags:
         - board
@@ -2587,8 +2564,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembersCardsByIdBoardByIdMember()
       tags:
         - board
@@ -2623,8 +2600,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembersInvitedByIdBoard()
       tags:
         - board
@@ -2658,8 +2635,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembersInvitedByIdBoardByField()
       tags:
         - board
@@ -2705,8 +2682,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembershipsByIdBoard()
       tags:
         - board
@@ -2751,8 +2728,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMembershipsByIdBoardByIdMembership()
       tags:
         - board
@@ -2791,9 +2768,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMembershipsByIdBoardByIdMembership()
       tags:
         - board
@@ -2822,8 +2798,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsMyPrefsByIdBoard()
       tags:
         - board
@@ -2858,9 +2834,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsEmailPositionByIdBoard()
       tags:
         - board
@@ -2895,9 +2870,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsIdEmailListByIdBoard()
       tags:
         - board
@@ -2932,9 +2906,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsShowListGuideByIdBoard()
       tags:
         - board
@@ -2969,9 +2942,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsShowSidebarByIdBoard()
       tags:
         - board
@@ -3006,9 +2978,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsShowSidebarActivityByIdBoard()
       tags:
         - board
@@ -3043,9 +3014,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsShowSidebarBoardActionsByIdBoard()
       tags:
         - board
@@ -3080,9 +3050,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsMyPrefsShowSidebarMembersByIdBoard()
       tags:
         - board
@@ -3117,9 +3086,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsNameByIdBoard()
       tags:
         - board
@@ -3154,8 +3122,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsOrganizationByIdBoard()
       tags:
         - board
@@ -3189,8 +3157,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getBoardsOrganizationByIdBoardByField()
       tags:
         - board
@@ -3225,9 +3193,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addBoardsPowerUpsByIdBoard()
       tags:
         - board
@@ -3261,9 +3228,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteBoardsPowerUpsByIdBoardByPowerUp()
       tags:
         - board
@@ -3298,9 +3264,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsBackgroundByIdBoard()
       tags:
         - board
@@ -3335,9 +3300,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsCalendarFeedEnabledByIdBoard()
       tags:
         - board
@@ -3372,9 +3336,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsCardAgingByIdBoard()
       tags:
         - board
@@ -3409,9 +3372,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsCardCoversByIdBoard()
       tags:
         - board
@@ -3446,9 +3408,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsCommentsByIdBoard()
       tags:
         - board
@@ -3483,9 +3444,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsInvitationsByIdBoard()
       tags:
         - board
@@ -3520,9 +3480,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsPermissionLevelByIdBoard()
       tags:
         - board
@@ -3557,9 +3516,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsSelfJoinByIdBoard()
       tags:
         - board
@@ -3594,9 +3552,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsPrefsVotingByIdBoard()
       tags:
         - board
@@ -3631,9 +3588,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateBoardsSubscribedByIdBoard()
       tags:
         - board
@@ -3695,9 +3651,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCards()
       tags:
         - card
@@ -3726,9 +3681,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsByIdCard()
       tags:
         - card
@@ -3884,8 +3838,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsByIdCard()
       tags:
         - card
@@ -3919,9 +3873,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsByIdCard()
       tags:
         - card
@@ -4027,8 +3980,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsActionsByIdCard()
       tags:
         - card
@@ -4063,9 +4016,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsActionsCommentsByIdCard()
       tags:
         - card
@@ -4100,9 +4052,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsActionsCommentsByIdCardByIdAction()
       tags:
         - card
@@ -4142,9 +4093,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsActionsCommentsByIdCardByIdAction()
       tags:
         - card
@@ -4184,8 +4134,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsAttachmentsByIdCard()
       tags:
         - card
@@ -4219,9 +4169,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsAttachmentsByIdCard()
       tags:
         - card
@@ -4255,9 +4204,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsAttachmentsByIdCardByIdAttachment()
       tags:
         - card
@@ -4296,8 +4244,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsAttachmentsByIdCardByIdAttachment()
       tags:
         - card
@@ -4332,8 +4280,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsBoardByIdCard()
       tags:
         - card
@@ -4367,8 +4315,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsBoardByIdCardByField()
       tags:
         - card
@@ -4403,8 +4351,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsCheckItemStatesByIdCard()
       tags:
         - card
@@ -4449,9 +4397,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsChecklistCheckItemByIdCardByIdChecklistCurrentByIdCheckItem()
       tags:
         - card
@@ -4491,9 +4438,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsChecklistCheckItemByIdCardByIdChecklist()
       tags:
         - card
@@ -4532,9 +4478,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsChecklistCheckItemByIdCardByIdChecklistByIdCheckItem()
       tags:
         - card
@@ -4573,9 +4518,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsChecklistCheckItemConvertToCardByIdCardByIdChecklistByIdCheckItem()
       tags:
         - card
@@ -4620,9 +4564,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsChecklistCheckItemNameByIdCardByIdChecklistByIdCheckItem()
       tags:
         - card
@@ -4667,9 +4610,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsChecklistCheckItemPosByIdCardByIdChecklistByIdCheckItem()
       tags:
         - card
@@ -4714,9 +4656,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsChecklistCheckItemStateByIdCardByIdChecklistByIdCheckItem()
       tags:
         - card
@@ -4781,8 +4722,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsChecklistsByIdCard()
       tags:
         - card
@@ -4816,9 +4757,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsChecklistsByIdCard()
       tags:
         - card
@@ -4852,9 +4792,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsChecklistsByIdCardByIdChecklist()
       tags:
         - card
@@ -4889,9 +4828,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsClosedByIdCard()
       tags:
         - card
@@ -4926,9 +4864,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsDescByIdCard()
       tags:
         - card
@@ -4963,9 +4900,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsDueByIdCard()
       tags:
         - card
@@ -5000,9 +4936,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsIdAttachmentCoverByIdCard()
       tags:
         - card
@@ -5037,9 +4972,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsIdBoardByIdCard()
       tags:
         - card
@@ -5074,9 +5008,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsIdLabelsByIdCard()
       tags:
         - card
@@ -5110,9 +5043,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsIdLabelsByIdCardByIdLabel()
       tags:
         - card
@@ -5147,9 +5079,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsIdListByIdCard()
       tags:
         - card
@@ -5184,9 +5115,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsIdMembersByIdCard()
       tags:
         - card
@@ -5220,9 +5150,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsIdMembersByIdCard()
       tags:
         - card
@@ -5256,9 +5185,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsIdMembersByIdCardByIdMember()
       tags:
         - card
@@ -5293,9 +5221,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsLabelsByIdCard()
       tags:
         - card
@@ -5329,9 +5256,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsLabelsByIdCard()
       tags:
         - card
@@ -5365,9 +5291,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsLabelsByIdCardByColor()
       tags:
         - card
@@ -5402,8 +5327,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsListByIdCard()
       tags:
         - card
@@ -5437,8 +5362,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsListByIdCardByField()
       tags:
         - card
@@ -5467,9 +5392,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsMarkAssociatedNotificationsReadByIdCard()
       tags:
         - card
@@ -5504,8 +5428,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsMembersByIdCard()
       tags:
         - card
@@ -5540,8 +5464,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsMembersVotedByIdCard()
       tags:
         - card
@@ -5575,9 +5499,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsMembersVotedByIdCard()
       tags:
         - card
@@ -5611,9 +5534,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsMembersVotedByIdCardByIdMember()
       tags:
         - card
@@ -5648,9 +5570,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsNameByIdCard()
       tags:
         - card
@@ -5685,9 +5606,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsPosByIdCard()
       tags:
         - card
@@ -5722,8 +5642,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsStickersByIdCard()
       tags:
         - card
@@ -5757,9 +5677,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addCardsStickersByIdCard()
       tags:
         - card
@@ -5793,9 +5712,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteCardsStickersByIdCardByIdSticker()
       tags:
         - card
@@ -5834,8 +5752,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getCardsStickersByIdCardByIdSticker()
       tags:
         - card
@@ -5874,9 +5792,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsStickersByIdCardByIdSticker()
       tags:
         - card
@@ -5911,9 +5828,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateCardsSubscribedByIdCard()
       tags:
         - card
@@ -5975,9 +5891,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addChecklists()
       tags:
         - checklist
@@ -6006,9 +5921,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteChecklistsByIdChecklist()
       tags:
         - checklist
@@ -6066,8 +5980,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsByIdChecklist()
       tags:
         - checklist
@@ -6101,9 +6015,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateChecklistsByIdChecklist()
       tags:
         - checklist
@@ -6138,8 +6051,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsBoardByIdChecklist()
       tags:
         - checklist
@@ -6173,8 +6086,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsBoardByIdChecklistByField()
       tags:
         - checklist
@@ -6273,8 +6186,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsCardsByIdChecklist()
       tags:
         - checklist
@@ -6347,8 +6260,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsCheckItemsByIdChecklist()
       tags:
         - checklist
@@ -6382,9 +6295,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addChecklistsCheckItemsByIdChecklist()
       tags:
         - checklist
@@ -6418,9 +6330,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteChecklistsCheckItemsByIdChecklistByIdCheckItem()
       tags:
         - checklist
@@ -6459,8 +6370,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getChecklistsCheckItemsByIdChecklistByIdCheckItem()
       tags:
         - checklist
@@ -6495,9 +6406,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateChecklistsIdCardByIdChecklist()
       tags:
         - checklist
@@ -6532,9 +6442,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateChecklistsNameByIdChecklist()
       tags:
         - checklist
@@ -6569,9 +6478,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateChecklistsPosByIdChecklist()
       tags:
         - checklist
@@ -6633,9 +6541,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addLabels()
       tags:
         - label
@@ -6664,9 +6571,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteLabelsByIdLabel()
       tags:
         - label
@@ -6700,8 +6606,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getLabelsByIdLabel()
       tags:
         - label
@@ -6735,9 +6641,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateLabelsByIdLabel()
       tags:
         - label
@@ -6772,8 +6677,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getLabelsBoardByIdLabel()
       tags:
         - label
@@ -6807,8 +6712,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getLabelsBoardByIdLabelByField()
       tags:
         - label
@@ -6843,9 +6748,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateLabelsColorByIdLabel()
       tags:
         - label
@@ -6880,9 +6784,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateLabelsNameByIdLabel()
       tags:
         - label
@@ -6912,9 +6815,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addLists()
       tags:
         - list
@@ -6972,8 +6874,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getListsByIdList()
       tags:
         - list
@@ -7007,9 +6909,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsByIdList()
       tags:
         - list
@@ -7115,8 +7016,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getListsActionsByIdList()
       tags:
         - list
@@ -7145,9 +7046,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addListsArchiveAllCardsByIdList()
       tags:
         - list
@@ -7182,8 +7082,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getListsBoardByIdList()
       tags:
         - list
@@ -7217,8 +7117,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getListsBoardByIdListByField()
       tags:
         - list
@@ -7317,8 +7217,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getListsCardsByIdList()
       tags:
         - list
@@ -7352,9 +7252,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addListsCardsByIdList()
       tags:
         - list
@@ -7421,9 +7320,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsClosedByIdList()
       tags:
         - list
@@ -7458,9 +7356,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsIdBoardByIdList()
       tags:
         - list
@@ -7495,9 +7392,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addListsMoveAllCardsByIdList()
       tags:
         - list
@@ -7532,9 +7428,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsNameByIdList()
       tags:
         - list
@@ -7569,9 +7464,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsPosByIdList()
       tags:
         - list
@@ -7606,9 +7500,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateListsSubscribedByIdList()
       tags:
         - list
@@ -7957,8 +7850,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersByIdMember()
       tags:
         - member
@@ -7992,9 +7885,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersByIdMember()
       tags:
         - member
@@ -8100,8 +7992,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersActionsByIdMember()
       tags:
         - member
@@ -8136,9 +8028,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersAvatarByIdMember()
       tags:
         - member
@@ -8173,9 +8064,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersAvatarSourceByIdMember()
       tags:
         - member
@@ -8210,9 +8100,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersBioByIdMember()
       tags:
         - member
@@ -8247,8 +8136,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardBackgroundsByIdMember()
       tags:
         - member
@@ -8282,9 +8171,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersBoardBackgroundsByIdMember()
       tags:
         - member
@@ -8318,9 +8206,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteMembersBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -8359,8 +8246,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -8399,9 +8286,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -8430,8 +8316,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardStarsByIdMember()
       tags:
         - member
@@ -8465,9 +8351,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersBoardStarsByIdMember()
       tags:
         - member
@@ -8501,9 +8386,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteMembersBoardStarsByIdMemberByIdBoardStar()
       tags:
         - member
@@ -8536,8 +8420,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardStarsByIdMemberByIdBoardStar()
       tags:
         - member
@@ -8576,9 +8460,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersBoardStarsByIdMemberByIdBoardStar()
       tags:
         - member
@@ -8618,9 +8501,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersBoardStarsIdBoardByIdMemberByIdBoardStar()
       tags:
         - member
@@ -8660,9 +8542,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersBoardStarsPosByIdMemberByIdBoardStar()
       tags:
         - member
@@ -8759,8 +8640,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardsByIdMember()
       tags:
         - member
@@ -8827,8 +8708,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardsInvitedByIdMember()
       tags:
         - member
@@ -8862,8 +8743,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersBoardsInvitedByIdMemberByField()
       tags:
         - member
@@ -8962,8 +8843,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCardsByIdMember()
       tags:
         - member
@@ -9030,8 +8911,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomBoardBackgroundsByIdMember()
       tags:
         - member
@@ -9065,9 +8946,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersCustomBoardBackgroundsByIdMember()
       tags:
         - member
@@ -9101,9 +8981,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -9142,8 +9021,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -9182,9 +9061,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersCustomBoardBackgroundsByIdMemberByIdBoardBackground()
       tags:
         - member
@@ -9220,8 +9098,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomEmojiByIdMember()
       tags:
         - member
@@ -9255,9 +9133,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersCustomEmojiByIdMember()
       tags:
         - member
@@ -9297,8 +9174,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomEmojiByIdMemberByIdCustomEmoji()
       tags:
         - member
@@ -9334,8 +9211,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomStickersByIdMember()
       tags:
         - member
@@ -9369,9 +9246,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersCustomStickersByIdMember()
       tags:
         - member
@@ -9405,9 +9281,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteMembersCustomStickersByIdMemberByIdCustomSticker()
       tags:
         - member
@@ -9446,8 +9321,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersCustomStickersByIdMemberByIdCustomSticker()
       tags:
         - member
@@ -9486,8 +9361,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersDeltasByIdMember()
       tags:
         - member
@@ -9522,9 +9397,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersFullNameByIdMember()
       tags:
         - member
@@ -9559,9 +9433,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersInitialsByIdMember()
       tags:
         - member
@@ -9652,8 +9525,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersNotificationsByIdMember()
       tags:
         - member
@@ -9720,9 +9593,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersOneTimeMessagesDismissedByIdMember()
       tags:
         - member
@@ -9768,8 +9640,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersOrganizationsByIdMember()
       tags:
         - member
@@ -9836,8 +9708,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersOrganizationsInvitedByIdMember()
       tags:
         - member
@@ -9871,8 +9743,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersOrganizationsInvitedByIdMemberByField()
       tags:
         - member
@@ -9907,9 +9779,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersPrefsColorBlindByIdMember()
       tags:
         - member
@@ -9944,9 +9815,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersPrefsLocaleByIdMember()
       tags:
         - member
@@ -9981,9 +9851,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersPrefsMinutesBetweenSummariesByIdMember()
       tags:
         - member
@@ -10012,8 +9881,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersSavedSearchesByIdMember()
       tags:
         - member
@@ -10047,9 +9916,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addMembersSavedSearchesByIdMember()
       tags:
         - member
@@ -10083,9 +9951,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteMembersSavedSearchesByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10118,8 +9985,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersSavedSearchesByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10158,9 +10025,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersSavedSearchesByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10200,9 +10066,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersSavedSearchesNameByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10242,9 +10107,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersSavedSearchesPosByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10284,9 +10148,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersSavedSearchesQueryByIdMemberByIdSavedSearch()
       tags:
         - member
@@ -10321,8 +10184,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getMembersTokensByIdMember()
       tags:
         - member
@@ -10357,9 +10220,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateMembersUsernameByIdMember()
       tags:
         - member
@@ -10415,9 +10277,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addNotificationsAllRead()
       tags:
         - notification
@@ -10522,8 +10383,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsByIdNotification()
       tags:
         - notification
@@ -10557,9 +10418,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateNotificationsByIdNotification()
       tags:
         - notification
@@ -10594,8 +10454,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsBoardByIdNotification()
       tags:
         - notification
@@ -10629,8 +10489,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsBoardByIdNotificationByField()
       tags:
         - notification
@@ -10665,8 +10525,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsCardByIdNotification()
       tags:
         - notification
@@ -10700,8 +10560,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsCardByIdNotificationByField()
       tags:
         - notification
@@ -10730,8 +10590,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsDisplayByIdNotification()
       tags:
         - notification
@@ -10760,8 +10620,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsEntitiesByIdNotification()
       tags:
         - notification
@@ -10796,8 +10656,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsListByIdNotification()
       tags:
         - notification
@@ -10831,8 +10691,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsListByIdNotificationByField()
       tags:
         - notification
@@ -10867,8 +10727,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsMemberByIdNotification()
       tags:
         - notification
@@ -10902,8 +10762,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsMemberByIdNotificationByField()
       tags:
         - notification
@@ -10938,8 +10798,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsMemberCreatorByIdNotification()
       tags:
         - notification
@@ -10973,8 +10833,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsMemberCreatorByIdNotificationByField()
       tags:
         - notification
@@ -11009,8 +10869,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsOrganizationByIdNotification()
       tags:
         - notification
@@ -11044,8 +10904,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getNotificationsOrganizationByIdNotificationByField()
       tags:
         - notification
@@ -11080,9 +10940,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateNotificationsUnreadByIdNotification()
       tags:
         - notification
@@ -11144,9 +11003,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addOrganizations()
       tags:
         - organization
@@ -11175,9 +11033,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsByIdOrg()
       tags:
         - organization
@@ -11345,8 +11202,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsByIdOrg()
       tags:
         - organization
@@ -11380,9 +11237,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsByIdOrg()
       tags:
         - organization
@@ -11488,8 +11344,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsActionsByIdOrg()
       tags:
         - organization
@@ -11586,8 +11442,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsBoardsByIdOrg()
       tags:
         - organization
@@ -11658,8 +11514,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsDeltasByIdOrg()
       tags:
         - organization
@@ -11694,9 +11550,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsDescByIdOrg()
       tags:
         - organization
@@ -11731,9 +11586,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsDisplayNameByIdOrg()
       tags:
         - organization
@@ -11762,9 +11616,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsLogoByIdOrg()
       tags:
         - organization
@@ -11798,9 +11651,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addOrganizationsLogoByIdOrg()
       tags:
         - organization
@@ -11846,8 +11698,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembersByIdOrg()
       tags:
         - organization
@@ -11881,9 +11733,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsMembersByIdOrg()
       tags:
         - organization
@@ -11949,9 +11800,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsMembersByIdOrgByIdMember()
       tags:
         - organization
@@ -11990,9 +11840,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsMembersByIdOrgByIdMember()
       tags:
         - organization
@@ -12026,9 +11875,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsMembersAllByIdOrgByIdMember()
       tags:
         - organization
@@ -12134,8 +11982,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembersCardsByIdOrgByIdMember()
       tags:
         - organization
@@ -12175,9 +12023,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsMembersDeactivatedByIdOrgByIdMember()
       tags:
         - organization
@@ -12212,8 +12059,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembersInvitedByIdOrg()
       tags:
         - organization
@@ -12247,8 +12094,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembersInvitedByIdOrgByField()
       tags:
         - organization
@@ -12294,8 +12141,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembershipsByIdOrg()
       tags:
         - organization
@@ -12340,8 +12187,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getOrganizationsMembershipsByIdOrgByIdMembership()
       tags:
         - organization
@@ -12380,9 +12227,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsMembershipsByIdOrgByIdMembership()
       tags:
         - organization
@@ -12417,9 +12263,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsNameByIdOrg()
       tags:
         - organization
@@ -12448,9 +12293,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsPrefsAssociatedDomainByIdOrg()
       tags:
         - organization
@@ -12484,9 +12328,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsAssociatedDomainByIdOrg()
       tags:
         - organization
@@ -12521,9 +12364,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsBoardVisibilityRestrictOrgByIdOrg()
       tags:
         - organization
@@ -12558,9 +12400,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsBoardVisibilityRestrictPrivateByIdOrg()
       tags:
         - organization
@@ -12595,9 +12436,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsBoardVisibilityRestrictPublicByIdOrg()
       tags:
         - organization
@@ -12632,9 +12472,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsExternalMembersDisabledByIdOrg()
       tags:
         - organization
@@ -12669,9 +12508,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsGoogleAppsVersionByIdOrg()
       tags:
         - organization
@@ -12705,9 +12543,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteOrganizationsPrefsOrgInviteRestrictByIdOrg()
       tags:
         - organization
@@ -12741,9 +12578,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsOrgInviteRestrictByIdOrg()
       tags:
         - organization
@@ -12778,9 +12614,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsPrefsPermissionLevelByIdOrg()
       tags:
         - organization
@@ -12815,9 +12650,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateOrganizationsWebsiteByIdOrg()
       tags:
         - organization
@@ -13060,9 +12894,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addSessions()
       tags:
         - session
@@ -13087,8 +12920,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getSessionsSocket()
       tags:
         - session
@@ -13123,9 +12956,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateSessionsByIdSession()
       tags:
         - session
@@ -13160,9 +12992,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateSessionsStatusByIdSession()
       tags:
         - session
@@ -13191,9 +13022,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteTokensByToken()
       tags:
         - token
@@ -13232,8 +13062,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTokensByToken()
       tags:
         - token
@@ -13268,8 +13098,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTokensMemberByToken()
       tags:
         - token
@@ -13303,8 +13133,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTokensMemberByTokenByField()
       tags:
         - token
@@ -13333,8 +13163,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTokensWebhooksByToken()
       tags:
         - token
@@ -13368,9 +13198,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addTokensWebhooksByToken()
       tags:
         - token
@@ -13404,9 +13233,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateTokensWebhooksByToken()
       tags:
         - token
@@ -13440,9 +13268,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteTokensWebhooksByTokenByIdWebhook()
       tags:
         - token
@@ -13475,8 +13302,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTokensWebhooksByTokenByIdWebhook()
       tags:
         - token
@@ -13537,8 +13364,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getTypesById()
       tags:
         - type
@@ -13568,9 +13395,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: addWebhooks()
       tags:
         - webhook
@@ -13600,9 +13426,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooks()
       tags:
         - webhook
@@ -13631,9 +13456,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: deleteWebhooksByIdWebhook()
       tags:
         - webhook
@@ -13661,8 +13485,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
+        - api_key: []
+        - api_token: []
       summary: getWebhooksByIdWebhook()
       tags:
         - webhook
@@ -13696,9 +13520,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooksByIdWebhook()
       tags:
         - webhook
@@ -13733,9 +13556,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooksActiveByIdWebhook()
       tags:
         - webhook
@@ -13770,9 +13592,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooksCallbackURLByIdWebhook()
       tags:
         - webhook
@@ -13807,9 +13628,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooksDescriptionByIdWebhook()
       tags:
         - webhook
@@ -13844,9 +13664,8 @@ paths:
         '400':
           description: Server rejection
       security:
-        - trello_auth:
-            - 'read:boards'
-            - 'write:boards'
+        - api_key: []
+        - api_token: []
       summary: updateWebhooksIdModelByIdWebhook()
       tags:
         - webhook
