@@ -4,5 +4,8 @@
     "recursive-readdir": "^2.1.1",
     "swagger-parser": "^3.4.1",
     "yargs": "^7.0.2"
+  },
+  "scripts": {
+    "test": "node ./testRunner.js"
   }
 }
