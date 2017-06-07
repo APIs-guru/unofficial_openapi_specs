@@ -5,7 +5,7 @@ info:
   description: "Yelp's Fusion API allows you to get the best local business information and user reviews of over million businesses in 32 countries"
   license:
     name: MIT
-    url: 'https://opensource.org/licenses/MIT '
+    url: 'https://opensource.org/licenses/MIT'
 host: api.yelp.com
 basePath: /v3
 securityDefinitions:
