@@ -1,18 +1,18 @@
 swagger: '2.0'
 info:
   version: '1.0'
-  title: Yelp V3 - Share
-  description: 'TODO: Add Description'
+  title: Yelp V3
+  description: "Yelp's Fusion API allows you to get the best local business information and user reviews of over million businesses in 32 countries"
   license:
     name: MIT
     url: 'https://opensource.org/licenses/MIT '
 host: api.yelp.com
-basePath: /
+basePath: /v3
 securityDefinitions:
   auth:
     type: oauth2
-    flow: implicit
-    authorizationUrl: ''
+    flow: application
+    tokenUrl: 'https://api.yelp.com/oauth2/token'
 schemes:
   - https
 consumes:
@@ -20,7 +20,7 @@ consumes:
 produces:
   - application/json
 paths:
-  /v3/businesses/search:
+  /businesses/search:
     get:
       description: ''
       summary: /businesses/search
@@ -62,12 +62,17 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v3/businesses/north-india-restaurant-san-francisco:
+  /businesses/{id}:
     get:
       description: ''
       summary: '/businesses/{id}'
       operationId: '/businesses/{id}'
       parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+          default: north-india-restaurant-san-francisco
         - $ref: '#/parameters/Authorization'
       responses:
         '200':
@@ -96,12 +101,17 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v3/businesses/north-india-restaurant-san-francisco/reviews:
+  /businesses/{id}/reviews:
     get:
       description: ''
       summary: '/businesses/{id}/reviews'
       operationId: '/businesses/{id}/reviews'
       parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+          default: north-india-restaurant-san-francisco
         - $ref: '#/parameters/Authorization'
       responses:
         '200':
@@ -130,38 +140,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /oauth2/token:
-    post:
-      description: ''
-      summary: 'https://api.yelp.com/oauth2/token'
-      operationId: 'https://api.yelp.com/oauth2/token'
-      parameters:
-        - name: client_id
-          in: formData
-          required: true
-          type: string
-          description: ''
-        - name: client_secret
-          in: formData
-          required: true
-          type: string
-          description: ''
-        - name: grant_type
-          in: formData
-          required: true
-          type: string
-          description: ''
-      responses:
-        '200':
-          description: ''
-      security: []
-      x-unitTests: []
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
-  /v3/autocomplete:
+  /autocomplete:
     get:
       description: ''
       summary: /autocomplete
@@ -202,7 +181,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v3/businesses/search/phone:
+  /businesses/search/phone:
     get:
       description: ''
       summary: /businesses/search/phone
@@ -226,7 +205,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v3/transactions/delivery/search:
+  /transactions/delivery/search:
     get:
       description: ''
       summary: /transactions/search
