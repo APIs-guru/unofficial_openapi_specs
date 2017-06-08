@@ -11,7 +11,7 @@ basePath: /v3
 securityDefinitions:
   auth:
     type: oauth2
-    flow: application
+    flow: password
     tokenUrl: 'https://api.yelp.com/oauth2/token'
     scopes: {}
 schemes:
