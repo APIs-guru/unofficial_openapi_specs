@@ -13,7 +13,7 @@ securityDefinitions:
     type: oauth2
     flow: application
     tokenUrl: 'https://api.yelp.com/oauth2/token'
-	scopes: {}
+    scopes: {}
 schemes:
   - https
 consumes:
