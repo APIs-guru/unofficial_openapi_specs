@@ -1,0 +1,558 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Stride API
+  description: This service provides public API for the Stride.
+host: api.atlassian.com
+basePath: /
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  '/app/module/chat/conversation/chat:configuration/:key/state':
+    post:
+      description: |-
+        Post app configuration updates telling the.
+
+        Authentication required.
+      summary: Send app configuration updates
+      tags:
+        - app
+      operationId: AppModuleChatConversationChatConfigurationKeyStatePost
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/app/module/chat/conversation/chat:glance/:key/state':
+    post:
+      description: |-
+        Post glance updates which will be pushed for all users within the specified context.
+
+        Authentication required.
+      summary: Send glance updates
+      tags:
+        - app
+      operationId: AppModuleChatConversationChatGlanceKeyStatePost
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation':
+    get:
+      description: |-
+        The API returns the list of conversations the app has access to. In the case of 2LO: this returns the list of conversations the app was installed in.
+
+        Authentication required, with scope participate:conversation
+      summary: Get a list of conversations
+      tags:
+        - site
+      operationId: SiteCloudIdConversationGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: 'Authentication required, with scope manage:conversation'
+      summary: Create conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationPost
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/user/:userId':
+    get:
+      description: |-
+
+        Get a direct conversation of a user.
+      summary: Get a direct conversation of a user
+      tags:
+        - site
+      operationId: SiteCloudIdConversationUserUserIdGet
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/user/:userId/message':
+    post:
+      description: Send message to a user.
+      summary: Send message to a user
+      tags:
+        - site
+      operationId: SiteCloudIdConversationUserUserIdMessagePost
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/user/:userId/message/:messageId':
+    put:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Edit a message in a direct conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationUserUserIdMessageMessageIdPut
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Delete a message in a direct conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationUserUserIdMessageMessageIdDelete
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId':
+    get:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Get conversation details
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    patch:
+      description: 'Authentication required, with scope manage:conversation'
+      summary: Update conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdPatch
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/archive':
+    put:
+      description: 'Authentication required, with scope manage:conversation'
+      summary: Archive conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdArchivePut
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/media':
+    post:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Upload a file
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMediaPost
+      produces:
+        - application/json
+      parameters:
+        - name: Accept
+          in: header
+          required: true
+          type: string
+          description: ''
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/media/:mediaId':
+    get:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Get a file
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMediaMediaIdGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Delete a file
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMediaMediaIdDelete
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/message':
+    get:
+      description: |-
+        Authentication required, with scope participate:conversation
+
+        This method returns messages after/before a given messageIDs or/and timestamps.
+        If these parameters are omitted the method returns conversation’s latest messages.
+        Max number of messages returned is 75.
+      summary: Get conversation history
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: |-
+
+        Send a message to a conversation.
+      summary: Send a message to a conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessagePost
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/message/recent':
+    get:
+      description: |-
+        Authentication required, with scope participate:conversation
+
+        Max number of messages returned is 75.
+      summary: Get latest messages for conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageRecentGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/message/:messageId':
+    get:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Get Message by id
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageMessageIdGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    put:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Edit a message in a conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageMessageIdPut
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Delete a message in a conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageMessageIdDelete
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/message/:messageId/context':
+    get:
+      description: |-
+        Authentication required, with scope participate:conversation
+
+        This method returns messages after and/or before a given messageID including the message itself.
+        Default value for 'after' and 'before' query parameters is 0.
+        Max number of messages returned is 75.
+      summary: Get conversation history contextually
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdMessageMessageIdContextGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/roster':
+    get:
+      description: 'Authentication required, with scope participate:conversation'
+      summary: Get conversation roster
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdRosterGet
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  '/site/:cloudId/conversation/:conversationId/unarchive':
+    put:
+      description: 'Authentication required, with scope manage:conversation'
+      summary: Unarchive conversation
+      tags:
+        - site
+      operationId: SiteCloudIdConversationConversationIdUnarchivePut
+      produces:
+        - application/json
+      parameters:
+        - name: Content-Type
+          in: header
+          required: true
+          type: string
+          description: ''
+      responses:
+        '200':
+          description: ''
+      security: []
+      x-unitTests: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
