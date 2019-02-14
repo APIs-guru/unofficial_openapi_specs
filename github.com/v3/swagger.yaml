@@ -9723,7 +9723,7 @@ paths:
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
             for details.
-  '/teams/{teamId}/repos/{org}/{repo}':
+  '/teams/{teamId}/repos/{owner}/{repo}':
     put:
       description: 'In order to add a repository to a team, the authenticated user must be an owner of the org that the team is associated with. Also, the repository must be owned by the organization, or a direct fork of a repository owned by the organization.'
       parameters:
@@ -9734,7 +9734,7 @@ paths:
           type: integer
         - description: Name of a organization.
           in: path
-          name: org
+          name: owner
           required: true
           type: string
         - description: Name of a repository.
@@ -9768,7 +9768,6 @@ paths:
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
             for details.
-  '/teams/{teamId}/repos/{owner}/{repo}':
     delete:
       description: 'In order to remove a repository from a team, the authenticated user must be an owner of the org that the team is associated with. NOTE: This does not delete the repository, it just removes it from the team.'
       parameters:
