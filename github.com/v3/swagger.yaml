@@ -1184,6 +1184,7 @@ paths:
               type: integer
   '/legacy/issues/search/{owner}/{repository}/{state}/{keyword}':
     get:
+      deprecated: true
       description: Find issues by state and keyword.
       parameters:
         - description: The search term.
@@ -1248,6 +1249,7 @@ paths:
               type: integer
   '/legacy/repos/search/{keyword}':
     get:
+      deprecated: true
       description: 'Find repositories by keyword. Note, this legacy method does not follow the v3 pagination pattern. This method returns up to 100 results per page and pages can be fetched using the start_page parameter.'
       parameters:
         - description: The search term
@@ -1320,6 +1322,7 @@ paths:
               type: integer
   '/legacy/user/email/{email}':
     get:
+      deprecated: true
       description: This API call is added for compatibility reasons only.
       parameters:
         - description: The email address
@@ -1368,6 +1371,7 @@ paths:
               type: integer
   '/legacy/user/search/{keyword}':
     get:
+      deprecated: true
       description: Find users by keyword.
       parameters:
         - description: The search term
@@ -4641,6 +4645,7 @@ paths:
               type: integer
   '/repos/{owner}/{repo}/downloads':
     get:
+      deprecated: true
       description: Deprecated. List downloads for a repository.
       parameters:
         - description: Name of repository owner.
@@ -4694,6 +4699,7 @@ paths:
               type: integer
   '/repos/{owner}/{repo}/downloads/{downloadId}':
     delete:
+      deprecated: true
       description: Deprecated. Delete a download.
       parameters:
         - description: Name of repository owner.
@@ -4750,6 +4756,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
     get:
+      deprecated: true
       description: Deprecated. Get a single download.
       parameters:
         - description: Name of repository owner.
@@ -11300,6 +11307,7 @@ paths:
               type: integer
   '/teams/{teamId}/members/{username}':
     delete:
+      deprecated: true
       description: |
         The "Remove team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Remove team membership API instead. It allows you to remove both active and pending memberships.
 
@@ -11357,6 +11365,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
     get:
+      deprecated: true
       description: |
         The "Get team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Get team membership API instead. It allows you to get both active and pending memberships.
 
@@ -11427,6 +11436,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
     put:
+      deprecated: true
       description: |
         The API (described below) is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Add team membership API instead. It allows you to invite new organization members to your teams.
 
@@ -13044,6 +13054,7 @@ paths:
   '/user/subscriptions/{owner}/{repo}':
     delete:
       description: Stop watching a repository
+      deprecated: true
       parameters:
         - description: Name of the owner.
           in: path
@@ -13094,6 +13105,7 @@ paths:
               type: integer
     get:
       description: Check if you are watching a repository.
+      deprecated: true
       parameters:
         - description: Name of the owner.
           in: path
@@ -13159,6 +13171,7 @@ paths:
               type: integer
     put:
       description: Watch a repository.
+      deprecated: true
       parameters:
         - description: Name of the owner.
           in: path
