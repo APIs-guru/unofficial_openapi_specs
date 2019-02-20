@@ -13331,7 +13331,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/users'
+            $ref: '#/definitions/user'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -19441,18 +19441,7 @@ definitions:
     type: array
   users:
     items:
-      properties:
-        avatar_url:
-          type: string
-        gravatar_id:
-          type: string
-        id:
-          type: integer
-        login:
-          type: string
-        url:
-          type: string
-      type: object
+      $ref: '#/definitions/user'
     type: array
   users-userId-keys:
     items: {}
