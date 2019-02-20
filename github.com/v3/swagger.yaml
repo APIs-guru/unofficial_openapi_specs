@@ -3705,7 +3705,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/commitComments'
+            $ref: '#/definitions/commitComment'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -3767,7 +3767,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/commitComments'
+            $ref: '#/definitions/commitComment'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -4063,7 +4063,7 @@ paths:
           name: body
           required: true
           schema:
-            $ref: '#/definitions/commitBody'
+            $ref: '#/definitions/commitCommentBody'
       responses:
         '201':
           description: Created
@@ -4081,7 +4081,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/commitComments'
+            $ref: '#/definitions/commitComment'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -4795,7 +4795,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/downloads'
+            $ref: '#/definitions/download'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -6546,7 +6546,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/events'
+            $ref: '#/definitions/issueEvents'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -6604,7 +6604,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/event'
+            $ref: '#/definitions/issueEvent'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -6904,7 +6904,7 @@ paths:
             X-GitHub-Request-Id:
               type: integer
           schema:
-            $ref: '#/definitions/events'
+            $ref: '#/definitions/issueEvents'
         '403':
           description: |
             API rate limit exceeded. See http://developer.github.com/v3/#rate-limiting
@@ -14219,6 +14219,7 @@ definitions:
         type: string
     type: object
   commitActivityStats:
+    type: array
     items:
       properties:
         days:
@@ -14230,8 +14231,7 @@ definitions:
         week:
           type: integer
       type: object
-    type: array
-  commitBody:
+  commitCommentBody:
     properties:
       body:
         type: string
@@ -14254,7 +14254,7 @@ definitions:
       - sha
       - body
     type: object
-  commitComments:
+  commitComment:
     properties:
       body:
         type: string
@@ -14783,7 +14783,7 @@ definitions:
       target_url:
         type: string
     type: object
-  downloads:
+  download:
     properties:
       content_type:
         type: string
@@ -14802,6 +14802,10 @@ definitions:
       url:
         type: string
     type: object
+  downloads:
+    type: array
+    items:
+      $ref: '#/definitions/download'
   editTeam:
     properties:
       name:
@@ -14819,116 +14823,11 @@ definitions:
       type: string
     type: array
   emojis:
-    properties:
-      '100':
-        type: string
-      '1234':
-        type: string
-      '+1':
-        type: string
-      '-1':
-        type: string
-      8ball:
-        type: string
-      a:
-        type: string
-      ab:
-        type: string
+    additionalProperties:
+      type: string
+      description: A URL for an image representing this emoji
     type: object
   event:
-    properties:
-      actor:
-        $ref: '#/definitions/actor'
-      commit_id:
-        type: string
-      created_at:
-        description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-        type: string
-      event:
-        type: string
-      issue:
-        properties:
-          assignee:
-            $ref: '#/definitions/user'
-          body:
-            type: string
-          closed_at:
-            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-            type: string
-          comments:
-            type: integer
-          created_at:
-            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-            type: string
-          html_url:
-            type: string
-          labels:
-            items:
-              properties:
-                color:
-                  type: string
-                name:
-                  type: string
-                url:
-                  type: string
-              type: object
-            type: array
-          milestone:
-            properties:
-              closed_issues:
-                type: integer
-              created_at:
-                description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-                type: string
-              creator:
-                $ref: '#/definitions/user'
-              description:
-                type: string
-              due_on:
-                description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-                type: string
-              number:
-                type: integer
-              open_issues:
-                type: integer
-              state:
-                enum:
-                  - open
-                  - closed
-              title:
-                type: string
-              url:
-                type: string
-            type: object
-          number:
-            type: integer
-          pull_request:
-            properties:
-              diff_url:
-                type: string
-              html_url:
-                type: string
-              patch_url:
-                type: string
-            type: object
-          state:
-            enum:
-              - open
-              - closed
-          title:
-            type: string
-          updated_at:
-            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
-            type: string
-          url:
-            type: string
-          user:
-            $ref: '#/definitions/user'
-        type: object
-      url:
-        type: string
-    type: object
-  events:
     properties:
       actor:
         $ref: '#/definitions/actor'
@@ -14955,6 +14854,10 @@ definitions:
       type:
         type: string
     type: object
+  events:
+    type: array
+    items:
+      $ref: '#/definitions/event'
   feeds:
     properties:
       _links:
@@ -15253,6 +15156,103 @@ definitions:
       title:
         type: string
     type: object
+  issueEvent:
+    properties:
+      actor:
+        $ref: '#/definitions/actor'
+      commit_id:
+        type: string
+      created_at:
+        description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+        type: string
+      event:
+        type: string
+      issue:
+        properties:
+          assignee:
+            $ref: '#/definitions/user'
+          body:
+            type: string
+          closed_at:
+            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+            type: string
+          comments:
+            type: integer
+          created_at:
+            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+            type: string
+          html_url:
+            type: string
+          labels:
+            items:
+              properties:
+                color:
+                  type: string
+                name:
+                  type: string
+                url:
+                  type: string
+              type: object
+            type: array
+          milestone:
+            properties:
+              closed_issues:
+                type: integer
+              created_at:
+                description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+                type: string
+              creator:
+                $ref: '#/definitions/user'
+              description:
+                type: string
+              due_on:
+                description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+                type: string
+              number:
+                type: integer
+              open_issues:
+                type: integer
+              state:
+                enum:
+                  - open
+                  - closed
+              title:
+                type: string
+              url:
+                type: string
+            type: object
+          number:
+            type: integer
+          pull_request:
+            properties:
+              diff_url:
+                type: string
+              html_url:
+                type: string
+              patch_url:
+                type: string
+            type: object
+          state:
+            enum:
+              - open
+              - closed
+          title:
+            type: string
+          updated_at:
+            description: 'ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ'
+            type: string
+          url:
+            type: string
+          user:
+            $ref: '#/definitions/user'
+        type: object
+      url:
+        type: string
+    type: object
+  issueEvents:
+    type: array
+    items:
+      $ref: '#/definitions/issueEvent'
   issues:
     items:
       properties:
