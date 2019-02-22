@@ -25,11 +25,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -60,11 +62,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -116,11 +120,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -172,11 +178,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -221,11 +229,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -269,11 +279,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -324,11 +336,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -384,11 +398,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -441,11 +457,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -502,11 +520,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -550,11 +570,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -606,11 +628,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -662,11 +686,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -710,11 +736,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -763,11 +791,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -817,11 +847,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -866,11 +898,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -918,11 +952,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -957,11 +993,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1014,11 +1052,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1074,11 +1114,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1123,11 +1165,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1179,11 +1223,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1227,11 +1273,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1283,11 +1331,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1337,11 +1387,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1489,11 +1541,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1524,11 +1578,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1580,11 +1636,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1636,11 +1694,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1693,11 +1753,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1747,11 +1809,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1797,11 +1861,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1855,11 +1921,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -1904,11 +1972,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -1958,11 +2028,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2007,11 +2079,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: formData
@@ -2083,11 +2157,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2118,11 +2194,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2174,11 +2252,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2224,11 +2304,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2259,11 +2341,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2312,11 +2396,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2365,11 +2451,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2417,11 +2505,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2466,11 +2556,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2518,11 +2610,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2574,11 +2668,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2624,11 +2720,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2686,11 +2784,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2740,11 +2840,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2790,11 +2892,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2826,11 +2930,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2880,11 +2986,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -2934,11 +3042,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -2984,11 +3094,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3034,11 +3146,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3181,11 +3295,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3233,11 +3349,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3272,11 +3390,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3332,11 +3452,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3388,11 +3510,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3444,11 +3568,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3492,11 +3618,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3527,11 +3655,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3580,11 +3710,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3632,11 +3764,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3681,11 +3815,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3733,11 +3869,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3773,11 +3911,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3826,11 +3966,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -3878,11 +4020,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -3917,11 +4061,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4010,11 +4156,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4045,11 +4193,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4096,11 +4246,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4148,11 +4300,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4199,11 +4353,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4251,11 +4407,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4290,11 +4448,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4347,11 +4507,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4403,11 +4565,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4456,11 +4620,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4504,11 +4670,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4539,11 +4707,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4592,11 +4762,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4682,11 +4854,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4737,11 +4911,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -4793,11 +4969,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4939,11 +5117,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -4988,11 +5168,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - description: |
@@ -5068,11 +5250,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -5116,11 +5300,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -5151,11 +5337,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -5206,11 +5394,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - in: path
@@ -5265,11 +5455,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -5317,11 +5509,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -5361,11 +5555,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - description: A 34 character string that uniquely identifies this account.
@@ -5413,11 +5609,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - description: A 34 character string that uniquely identifies this account.
@@ -5465,11 +5663,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
         - description: A 34 character string that uniquely identifies this account.
@@ -5520,11 +5720,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
@@ -5567,11 +5769,13 @@ paths:
         - description: |
             By default, Twilio's REST API returns XML. You may obtain CSV, JSON or HTML by appending ".csv", ".json", or ".html".
           enum:
+            - .xml
             - .json
             - .csv
             - .html
           in: path
           name: mediaTypeExtension
+          default: .xml
           required: true
           type: string
       produces:
