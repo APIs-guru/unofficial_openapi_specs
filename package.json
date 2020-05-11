@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "js-yaml": "^3.8.2",
+    "js-yaml": "^3.13.1",
+    "oas-validator": "^4.0.3",
     "recursive-readdir": "^2.1.1",
     "swagger-parser": "^3.4.1",
     "yargs": "^7.0.2"

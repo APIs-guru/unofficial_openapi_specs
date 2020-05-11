@@ -760,7 +760,7 @@ paths:
           required: false
           type: string
         - description: |-
-            If you delete a group and content is restricted to that group, the content will be hidden from all users. 
+            If you delete a group and content is restricted to that group, the content will be hidden from all users.
              To prevent this, use this parameter to specify a different group to transfer the restrictions (comments and worklogs only) to.
           in: query
           name: swapGroup
@@ -2379,12 +2379,12 @@ paths:
       description: |-
         Returns a list of statements explaining why the password policy would disallow a proposed password for a new user.
          <p>
-         You can use this method to test the password policy validation. This could be done prior to an action 
-         where a new user and related password are created, using methods like the ones in 
-         <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/bc/user/UserService.html">UserService</a>.      
+         You can use this method to test the password policy validation. This could be done prior to an action
+         where a new user and related password are created, using methods like the ones in
+         <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/bc/user/UserService.html">UserService</a>.
          For example, you could use this to validate a password in a create user form in the user interface, as the user enters it.<br/>
          The username and new password must be not empty to perform the validation.<br/>
-         Note, this method will help you validate against the policy only. It won't check any other validations that might be performed 
+         Note, this method will help you validate against the policy only. It won't check any other validations that might be performed
          when creating a new user, e.g. checking whether a user with the same name already exists.
          </p>
       operationId: policyCheckCreateUser
@@ -2398,12 +2398,12 @@ paths:
       description: |-
         Returns a list of statements explaining why the password policy would disallow a proposed new password for a user with an existing password.
          <p>
-         You can use this method to test the password policy validation. This could be done prior to an action where the password 
-         is actually updated, using methods like <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/web/action/user/ChangePassword.html">ChangePassword</a>      
-         or <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/web/action/user/ResetPassword.html">ResetPassword</a>. 
+         You can use this method to test the password policy validation. This could be done prior to an action where the password
+         is actually updated, using methods like <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/web/action/user/ChangePassword.html">ChangePassword</a>
+         or <a href="https://docs.atlassian.com/jira/latest/com/atlassian/jira/web/action/user/ResetPassword.html">ResetPassword</a>.
          For example, you could use this to validate a password in a change password form in the user interface, as the user enters it.<br/>
          The user must exist and the username and new password must be not empty, to perform the validation.<br/>
-         Note, this method will help you validate against the policy only. It won't check any other validations that might be performed 
+         Note, this method will help you validate against the policy only. It won't check any other validations that might be performed
          when submitting a password change/reset request, e.g. verifying whether the old password is valid.
          </p>
       operationId: policyCheckUpdateUser
@@ -4440,7 +4440,7 @@ paths:
         '200':
           description: Successful Response
       description: |-
-        Returns a list of active users that match the search string. This resource cannot be accessed anonymously 
+        Returns a list of active users that match the search string. This resource cannot be accessed anonymously
          and requires the Browse Users global permission.
          Given an issue key this resource will provide a list of users that match the search string and have
          the browse issue permission for the issue provided.
