@@ -2484,7 +2484,7 @@
       "parameters": [
         {
           "description": "The numerical ID of the desired status.",
-          "in": "query",
+          "in": "path",
           "name": "id",
           "required": true,
           "type": "string"
